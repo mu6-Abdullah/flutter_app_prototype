@@ -18,6 +18,9 @@ class FirstRoute extends StatelessWidget{
       ),
       body: Center(
         child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.red[600])
+          ),
           child: Text('Next Page'),
           onPressed: () {
             Navigator.push(
